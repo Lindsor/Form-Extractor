@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Form Extractor Test</title>
+
+  <style>
+    fieldset {
+      margin-bottom: 1em;
+    }
+  </style>
+</head>
+
+<body>
+  <main>
+    <h1>Form Extractor Test Page</h1>
+    <form id="extractor" action="#" method="get">
+      <fieldset>
+        <input name="text" type="text" value="Text">
+      </fieldset>
+      <fieldset>
+        <input name="email" type="email" value="email@email.com">
+      </fieldset>
+      <fieldset>
+        <input name="number" type="number" step="any" min="0" max="10" value="5">
+      </fieldset>
+      <fieldset>
+        <input name="range" type="range" min="0" max="10" value="5">
+      </fieldset>
+      <fieldset>
+        <input name="checkbox" type="checkbox" value="check1" id="check1">
+        <label for="check1">Check 1</label>
+        <br>
+        <input name="checkbox" type="checkbox" value="check2" id="check2">
+        <label for="check2">Check 2</label>
+        <br>
+        <input name="checkbox" type="checkbox" value="check3" id="check3">
+        <label for="check3">Check 3</label>
+      </fieldset>
+      <fieldset>
+        <input name="radio" type="radio" value="radio1" id="radio1" checked>
+        <label for="radio1">Radio 1</label>
+        <br>
+        <input name="radio" type="radio" value="radio2" id="radio2">
+        <label for="radio2">Radio 2</label>
+        <br>
+        <input name="radio" type="radio" value="radio3" id="radio3">
+        <label for="radio3">Radio 3</label>
+      </fieldset>
+      <fieldset>
+        <input name="color" type="color" value="#9b2d2d">
+      </fieldset>
+      <fieldset>
+        <input name="date" type="date" value="2015-12-17">
+      </fieldset>
+      <fieldset>
+        <output>Output</output>
+      </fieldset>
+    </form>
+  </main>
+  <script src="js/formExtractor.js"></script>
+</body>
+
+</html>
